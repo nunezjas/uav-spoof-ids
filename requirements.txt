@@ -1,0 +1,16 @@
+torch
+torch-geometric
+xgboost
+lightgbm
+scikit-learn
+pandas
+numpy
+pyulog
+pymavlink
+pyarrow
+fastparquet
+matplotlib
+seaborn
+wandb
+pytest
+python-dotenv

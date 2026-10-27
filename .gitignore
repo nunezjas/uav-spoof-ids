@@ -1,0 +1,10 @@
+data/raw/
+data/interim/
+*.ulg
+*.bin
+*.env
+__pycache__/
+*.pyc
+.DS_Store
+results/
+*.csv
