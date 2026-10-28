@@ -1,0 +1,37 @@
+{
+  "gate_threshold": 14.349432859420785,
+  "cusum_k": 4.939096075116784,
+  "cusum_h": 100,
+  "results": [
+    {
+      "drift_ms": 0.1,
+      "detected": false,
+      "ttd_s": null,
+      "pos_err_m": null
+    },
+    {
+      "drift_ms": 0.3,
+      "detected": false,
+      "ttd_s": null,
+      "pos_err_m": null
+    },
+    {
+      "drift_ms": 0.5,
+      "detected": false,
+      "ttd_s": null,
+      "pos_err_m": null
+    },
+    {
+      "drift_ms": 1.0,
+      "detected": false,
+      "ttd_s": null,
+      "pos_err_m": null
+    },
+    {
+      "drift_ms": 2.0,
+      "detected": true,
+      "ttd_s": 1.9000000000132147,
+      "pos_err_m": 3.8000000000264293
+    }
+  ]
+}

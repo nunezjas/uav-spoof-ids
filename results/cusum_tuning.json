@@ -1,0 +1,122 @@
+[
+  {
+    "drift_ms": 0.1,
+    "cusum_h": 15.0,
+    "detected": false,
+    "false_alarm": true,
+    "ttd_s": null,
+    "pos_err_m": null
+  },
+  {
+    "drift_ms": 0.1,
+    "cusum_h": 30.0,
+    "detected": false,
+    "false_alarm": true,
+    "ttd_s": null,
+    "pos_err_m": null
+  },
+  {
+    "drift_ms": 0.1,
+    "cusum_h": 50.0,
+    "detected": false,
+    "false_alarm": true,
+    "ttd_s": null,
+    "pos_err_m": null
+  },
+  {
+    "drift_ms": 0.3,
+    "cusum_h": 15.0,
+    "detected": false,
+    "false_alarm": true,
+    "ttd_s": null,
+    "pos_err_m": null
+  },
+  {
+    "drift_ms": 0.3,
+    "cusum_h": 30.0,
+    "detected": false,
+    "false_alarm": true,
+    "ttd_s": null,
+    "pos_err_m": null
+  },
+  {
+    "drift_ms": 0.3,
+    "cusum_h": 50.0,
+    "detected": false,
+    "false_alarm": true,
+    "ttd_s": null,
+    "pos_err_m": null
+  },
+  {
+    "drift_ms": 0.5,
+    "cusum_h": 15.0,
+    "detected": false,
+    "false_alarm": true,
+    "ttd_s": null,
+    "pos_err_m": null
+  },
+  {
+    "drift_ms": 0.5,
+    "cusum_h": 30.0,
+    "detected": false,
+    "false_alarm": true,
+    "ttd_s": null,
+    "pos_err_m": null
+  },
+  {
+    "drift_ms": 0.5,
+    "cusum_h": 50.0,
+    "detected": false,
+    "false_alarm": true,
+    "ttd_s": null,
+    "pos_err_m": null
+  },
+  {
+    "drift_ms": 1.0,
+    "cusum_h": 15.0,
+    "detected": false,
+    "false_alarm": true,
+    "ttd_s": null,
+    "pos_err_m": null
+  },
+  {
+    "drift_ms": 1.0,
+    "cusum_h": 30.0,
+    "detected": false,
+    "false_alarm": true,
+    "ttd_s": null,
+    "pos_err_m": null
+  },
+  {
+    "drift_ms": 1.0,
+    "cusum_h": 50.0,
+    "detected": false,
+    "false_alarm": true,
+    "ttd_s": null,
+    "pos_err_m": null
+  },
+  {
+    "drift_ms": 2.0,
+    "cusum_h": 15.0,
+    "detected": false,
+    "false_alarm": true,
+    "ttd_s": null,
+    "pos_err_m": null
+  },
+  {
+    "drift_ms": 2.0,
+    "cusum_h": 30.0,
+    "detected": false,
+    "false_alarm": true,
+    "ttd_s": null,
+    "pos_err_m": null
+  },
+  {
+    "drift_ms": 2.0,
+    "cusum_h": 50.0,
+    "detected": false,
+    "false_alarm": true,
+    "ttd_s": null,
+    "pos_err_m": null
+  }
+]

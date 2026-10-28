@@ -1,0 +1,73 @@
+{
+  "baseline_name": "EKF + CUSUM (physical only, no learning)",
+  "corresponds_to": "Section 7 bullet 1: physical-only baseline",
+  "parameters": {
+    "cusum_k": 4.939096075116784,
+    "cusum_h": 100,
+    "gate_threshold": 14.349432859420785,
+    "gps_noise_std_m": 3.0,
+    "imu_noise_std": 0.05
+  },
+  "ungated_results": {
+    "0.1_ms": {
+      "detected": false,
+      "ttd_s": null,
+      "pos_err_m": null
+    },
+    "0.3_ms": {
+      "detected": true,
+      "ttd_s": 70.8,
+      "pos_err_m": 21.2
+    },
+    "0.5_ms": {
+      "detected": true,
+      "ttd_s": 59.5,
+      "pos_err_m": 29.7
+    },
+    "1.0_ms": {
+      "detected": false,
+      "ttd_s": null,
+      "pos_err_m": null
+    },
+    "2.0_ms": {
+      "detected": false,
+      "ttd_s": null,
+      "pos_err_m": null
+    },
+    "fpr": "60-70% at h=100"
+  },
+  "gated_results": {
+    "0.1_ms": {
+      "detected": false,
+      "ttd_s": null,
+      "pos_err_m": null
+    },
+    "0.3_ms": {
+      "detected": false,
+      "ttd_s": null,
+      "pos_err_m": null
+    },
+    "0.5_ms": {
+      "detected": false,
+      "ttd_s": null,
+      "pos_err_m": null
+    },
+    "1.0_ms": {
+      "detected": false,
+      "ttd_s": null,
+      "pos_err_m": null
+    },
+    "2.0_ms": {
+      "detected": true,
+      "ttd_s": 1.9,
+      "pos_err_m": 3.8
+    }
+  },
+  "failure_modes": [
+    "Slow drift (0.1 m/s): nu increase below GPS noise floor",
+    "Fast drift (1.0-2.0 m/s, ungated): Kalman absorbs spoof",
+    "Slow drift (all, gated): gate rejects spoof but CUSUM never accumulates",
+    "High FPR: natural nu spikes from 3m GPS noise exceed slack k"
+  ],
+  "paper_narrative": "The physical-only EKF+CUSUM baseline detects mid-range drifts (0.3-0.5 m/s) but fails at both extremes: slow drift is below the noise floor, and fast drift is absorbed by the Kalman filter. FPR of 60-70% makes it unusable for deployment. This motivates (1) f_theta to reduce nominal innovation variance, (2) the innovation gate to prevent absorption, and (3) the cooperative graph layer for cross-UAV verification."
+}

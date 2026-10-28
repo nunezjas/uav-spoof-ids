@@ -1,0 +1,37 @@
+{
+  "calibrated_h": 100,
+  "cusum_k": 4.939096075116784,
+  "k_rationale": "empirical E[nu|H0] from 10 clean flights",
+  "detection": [
+    {
+      "drift_ms": 0.1,
+      "detected": false,
+      "ttd_s": null,
+      "pos_err_m": null
+    },
+    {
+      "drift_ms": 0.3,
+      "detected": true,
+      "ttd_s": 70.79999999995354,
+      "pos_err_m": 21.23999999998606
+    },
+    {
+      "drift_ms": 0.5,
+      "detected": true,
+      "ttd_s": 59.499999999963805,
+      "pos_err_m": 29.749999999981902
+    },
+    {
+      "drift_ms": 1.0,
+      "detected": false,
+      "ttd_s": null,
+      "pos_err_m": null
+    },
+    {
+      "drift_ms": 2.0,
+      "detected": false,
+      "ttd_s": null,
+      "pos_err_m": null
+    }
+  ]
+}
